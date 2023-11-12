@@ -19,6 +19,7 @@ export default function Header() {
 					backgroundSize: "cover",
 					height: "3.125rem",
 				}}
+				className="t-header"
 			>
 				<Row
 					className="align-items-center text-white text-center"
@@ -59,9 +60,7 @@ export default function Header() {
 						</Row>
 					</Col>
 				</Row>
-			</Container>
-			<Container fluid className="bg-light">
-				<Row className="p-3 align-items-center">
+				<Row className="p-3 align-items-center bg-light">
 					<Col>
 						<Card.Img style={{ width: "100%", height: "30px" }} src="../image/gumac-headerlogo.svg" />
 					</Col>

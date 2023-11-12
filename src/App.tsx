@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -8,6 +7,7 @@ import Header from "./components/Header";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import { BsHeart } from "react-icons/bs";
+import ImageItem from "./components/ImageItem";
 
 function App() {
 	return (
@@ -342,6 +342,55 @@ function App() {
 								</Card.Body>
 							</Card>
 						</Col>
+					</Row>
+				</Container>
+				<Container className="mt-5">
+					<Row md={5}>
+						<ImageItem
+							url1="../image/0-DEN-AD10025.png"
+							url1Change="../image/1-DEN-AD10025.png"
+							url2="../image/MAU-DEN-AD10025.png"
+							name1="Áo kiểu thắt nơ"
+							name2="AD10025"
+							price="330.000 đ"
+							priceDiscount="297.000 đ"
+						/>
+						<ImageItem
+							url1="../image/0-HONG-AD10028.png"
+							url1Change="../image/1-HONG-AD10028.png"
+							url2="../image/MAU-HONG-AD10028.png"
+							name1="Áo kiểu lệch vai"
+							name2="AD10028"
+							price="375.000 đ"
+							priceDiscount="337.500 đ"
+						/>
+						<ImageItem
+							url1="../image/0-DEN-AD10052.png"
+							url1Change="../image/1-DEN-AD10052.png"
+							url2="../image/MAU-DEN-AD10052.png"
+							name1="Áo sơ mi thắt nơ"
+							name2="AD10052"
+							price="430.000 đ"
+							priceDiscount="387.000 đ"
+						/>
+						<ImageItem
+							url1="../image/0-TRANG-AD10024.png"
+							url1Change="../image/1-TRANG-AD10024.png"
+							url2="../image/MAU-TRANG-AD10024.png"
+							name1="Áo kiểu viền bèo"
+							name2="AD10024"
+							price="430.000 đ"
+							priceDiscount="387.000 đ"
+						/>
+						<ImageItem
+							url1="../image/0-HONG-VD10049.png"
+							url1Change="../image/1-HONG-VD10049.png"
+							url2="../image/MAU-HONG-VD10049.png"
+							name1="Chân váy bút chì kiểu"
+							name2="VD10049"
+							price="495.000 đ"
+							priceDiscount="445.500 đ"
+						/>
 					</Row>
 				</Container>
 			</main>

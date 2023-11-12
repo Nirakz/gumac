@@ -71,6 +71,13 @@
 	cursor: pointer;
 }
 
+.t-header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 102;
+}
+
 /* .slider {
 	height: 635px;
 	position: relative;
