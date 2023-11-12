@@ -56,11 +56,11 @@
 }
 
 .p-homeCollectionFirst_info {
-    left: -20%;
-    max-width: 50%;
-    position: absolute;
-    top: 11%;
-    z-index: 1;
+	left: -20%;
+	max-width: 50%;
+	position: absolute;
+	top: 11%;
+	z-index: 1;
 }
 
 .p-homeCollectionFirst:hover {

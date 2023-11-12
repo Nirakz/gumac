@@ -9,7 +9,6 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import { BsHeart } from "react-icons/bs";
 
-
 function App() {
 	return (
 		<>
@@ -132,49 +131,130 @@ function App() {
 					</Row>
 				</Container>
 				<Container>
-					<Row >
+					<Row>
 						<Col className="d-flex align-items-center">
 							<Row md={1}>
 								<Col className="d-flex justify-content-center align-items-center">
-									<Card.Img style={{width: "181px", height: "278px", borderRadius: "62.4375rem", overflow: "hidden"}} src="../image/0-DEN-AD10040.png"/>
+									<Card.Img
+										style={{
+											width: "181px",
+											height: "278px",
+											borderRadius: "62.4375rem",
+											overflow: "hidden",
+										}}
+										src="../image/0-DEN-AD10040.png"
+									/>
 									<div className="d-flex flex-column ms-4">
-										<span className="fs-5 w-75" style={{cursor: "pointer",}}>Áo Blazer dáng suông AD10040</span>
-										<span className="fs-6 fw-light text-secondary mt-2" style={{cursor: "pointer",}}>Áo Vest & Blazer</span>
-										<span className="fs-4 mt-3" style={{cursor: "pointer",}}>855.000 đ</span>
+										<span className="fs-5 w-75" style={{ cursor: "pointer" }}>
+											Áo Blazer dáng suông AD10040
+										</span>
+										<span
+											className="fs-6 fw-light text-secondary mt-2"
+											style={{ cursor: "pointer" }}
+										>
+											Áo Vest & Blazer
+										</span>
+										<span className="fs-4 mt-3" style={{ cursor: "pointer" }}>
+											855.000 đ
+										</span>
 										<div className="d-flex align-items-center mt-3">
-											<Button variant="outline" className="rounded-pill btn-container" style={{border: "1px solid #00aeef", color: "#00aeef", width: "100px"}}>Mua ngay</Button>
-											<BsHeart className="ms-3" style={{color: "#00aeef", cursor: "pointer", width: "25px", height: "25px"}}/>
+											<Button
+												variant="outline"
+												className="rounded-pill btn-container"
+												style={{
+													border: "1px solid #00aeef",
+													color: "#00aeef",
+													width: "100px",
+												}}
+											>
+												Mua ngay
+											</Button>
+											<BsHeart
+												className="ms-3"
+												style={{
+													color: "#00aeef",
+													cursor: "pointer",
+													width: "25px",
+													height: "25px",
+												}}
+											/>
 										</div>
-										
 									</div>
 								</Col>
 								<Col className="d-flex justify-content-center align-items-center mt-4">
-									<Card.Img style={{width: "181px", height: "278px", borderRadius: "62.4375rem", overflow: "hidden"}} src="../image/0-DEN-QD10016.png"/>
+									<Card.Img
+										style={{
+											width: "181px",
+											height: "278px",
+											borderRadius: "62.4375rem",
+											overflow: "hidden",
+										}}
+										src="../image/0-DEN-QD10016.png"
+									/>
 									<div className="d-flex flex-column ms-4">
-										<span className="fs-5 w-75" style={{cursor: "pointer",}}>Quần ống suông xếp ly QD10016</span>
-										<span className="fs-6 fw-light text-secondary mt-2" style={{cursor: "pointer",}}>Quần Tây Ống Suông</span>
-										<span className="fs-4 mt-3" style={{cursor: "pointer",}}>445.500 đ</span>
+										<span className="fs-5 w-75" style={{ cursor: "pointer" }}>
+											Quần ống suông xếp ly QD10016
+										</span>
+										<span
+											className="fs-6 fw-light text-secondary mt-2"
+											style={{ cursor: "pointer" }}
+										>
+											Quần Tây Ống Suông
+										</span>
+										<span className="fs-4 mt-3" style={{ cursor: "pointer" }}>
+											445.500 đ
+										</span>
 										<div className="d-flex align-items-center mt-3">
-											<Button variant="outline" className="rounded-pill btn-container" style={{border: "1px solid #00aeef", color: "#00aeef", width: "100px", cursor: "pointer"}}>Mua ngay</Button>
-											<BsHeart className="ms-3" style={{color: "#00aeef", cursor: "pointer", width: "25px", height: "25px"}}/>
+											<Button
+												variant="outline"
+												className="rounded-pill btn-container"
+												style={{
+													border: "1px solid #00aeef",
+													color: "#00aeef",
+													width: "100px",
+													cursor: "pointer",
+												}}
+											>
+												Mua ngay
+											</Button>
+											<BsHeart
+												className="ms-3"
+												style={{
+													color: "#00aeef",
+													cursor: "pointer",
+													width: "25px",
+													height: "25px",
+												}}
+											/>
 										</div>
 									</div>
 								</Col>
 							</Row>
 						</Col>
 						<Col>
-							<div style={{position : "relative"}}>
+							<div style={{ position: "relative" }}>
 								<div className="p-homeCollectionFirst_info">
 									<Row md={1}>
-										<Col style={{fontSize: "60px"}} className="fw-bold">HER GLOW</Col>
+										<Col style={{ fontSize: "60px" }} className="fw-bold">
+											HER GLOW
+										</Col>
 										<Col className="d-flex align-items-center p-homeCollectionFirst">
-											<Card.Img height={52} style={{marginLeft: "-120px"}} src="../image/ic_arrow_blue.svg"/>
-											<span className="a-homeCollectionFirst" style={{marginLeft: "-123px", width: "232px"}}>XEM NGAY BỘ SƯU TẬP</span>
+											<Card.Img
+												height={52}
+												style={{ marginLeft: "-120px" }}
+												src="../image/ic_arrow_blue.svg"
+											/>
+											<span
+												className="a-homeCollectionFirst"
+												style={{ marginLeft: "-123px", width: "232px" }}
+											>
+												XEM NGAY BỘ SƯU TẬP
+											</span>
 										</Col>
 									</Row>
 								</div>
 								<div>
-									<Card.Img style={{marginLeft: "100px"}} src="../image/1.png"/>
+									<Card.Img style={{ marginLeft: "100px" }} src="../image/1.png" />
 								</div>
 							</div>
 						</Col>
