@@ -108,22 +108,22 @@ function App() {
 					</Row>
 				</Container>
 				<Container fluid>
-					<Row md={1}>
+					<Row lg={1}>
 						<Col className="d-flex justify-content-center align-items-center">
 							<Image className="d-flex" src="../image/banner-phu.jpg" />
 						</Col>
 						<Col className="mt-3">
-							<Row md={4} className="justify-content-md-center">
-								<Col className="img-container m-2 mt-4" style={{ width: "336px", height: "491px" }}>
+							<Row md={2} className="justify-content-md-center">
+								<Col className="img-container img-item m-2 mt-4">
 									<Card.Img src="../image/artboard-1-2.jpg" />
 								</Col>
-								<Col className="img-container m-2" style={{ width: "336px", height: "491px" }}>
+								<Col className="img-container m-2 img-item">
 									<Card.Img src="../image/artboard-2-2.jpg" />
 								</Col>
-								<Col className="img-container m-2 mt-4" style={{ width: "336px", height: "491px" }}>
+								<Col className="img-container m-2 mt-4 img-item">
 									<Card.Img src="../image/artboard-3-2.jpg" />
 								</Col>
-								<Col className="img-container m-2" style={{ width: "336px", height: "491px" }}>
+								<Col className="img-container m-2 img-item">
 									<Card.Img src="../image/artboard-4.jpg" />
 								</Col>
 							</Row>
@@ -235,21 +235,10 @@ function App() {
 							<div style={{ position: "relative" }}>
 								<div className="p-homeCollectionFirst_info">
 									<Row md={1}>
-										<Col style={{ fontSize: "60px" }} className="fw-bold">
-											HER GLOW
-										</Col>
+										<Col className="fw-bold homeCollectionFirst_info">HER GLOW</Col>
 										<Col className="d-flex align-items-center p-homeCollectionFirst">
-											<Card.Img
-												height={52}
-												style={{ marginLeft: "-120px" }}
-												src="../image/ic_arrow_blue.svg"
-											/>
-											<span
-												className="a-homeCollectionFirst"
-												style={{ marginLeft: "-123px", width: "232px" }}
-											>
-												XEM NGAY BỘ SƯU TẬP
-											</span>
+											<Card.Img src="../image/ic_arrow_blue.svg" className="ic-arrow" />
+											<span className="buttonIcon_text">XEM NGAY BỘ SƯU TẬP</span>
 										</Col>
 									</Row>
 								</div>
@@ -262,46 +251,6 @@ function App() {
 				</Container>
 				<Container>
 					<Row md={5}>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
 						<Col className="p-2">
 							<Card border="info">
 								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">

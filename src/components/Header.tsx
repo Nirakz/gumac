@@ -60,7 +60,7 @@ export default function Header() {
 						</Row>
 					</Col>
 				</Row>
-				<Row className="p-3 align-items-center bg-light">
+				<Row md={5} className="p-3 align-items-center bg-light">
 					<Col>
 						<Card.Img style={{ width: "100%", height: "30px" }} src="../image/gumac-headerlogo.svg" />
 					</Col>
