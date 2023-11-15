@@ -54,20 +54,14 @@ export default function Header() {
 
 	return (
 		<header>
-			<Container
-				fluid
-				style={{
-					backgroundImage: `url("../image/header_bg_top.jpg")`,
-					backgroundSize: "cover",
-					height: "3.125rem",
-				}}
-				className="t-header"
-			>
+			<Container fluid>
 				<Row
-					className="align-items-center text-white text-center"
+					className="align-items-center text-white text-center t-header"
 					style={{
 						height: "3.125rem",
 						fontSize: "14px",
+						backgroundImage: `url("../image/header_bg_top.jpg")`,
+						backgroundSize: "cover",
 					}}
 				>
 					<Col md={4}>
@@ -104,7 +98,9 @@ export default function Header() {
 				</Row>
 				<Row md={5} className="p-3 align-items-center bg-light">
 					<Col>
-						<Card.Img style={{ width: "100%", height: "30px" }} src="../image/gumac-headerlogo.svg" />
+						<Navbar.Brand as={Link} to="/">
+							<Card.Img style={{ width: "100%", height: "30px" }} src="../image/gumac-headerlogo.svg" />
+						</Navbar.Brand>
 					</Col>
 					<Col sm={7}>
 						<Row md={7} className="text-center">
@@ -503,7 +499,7 @@ export default function Header() {
 						<Row className="ms-4 large-icon">
 							<Col md="auto">
 								{/* as={NavLink} to="/dang-nhap" */}
-								<Navbar.Brand as={Link} to="/dang-nhap">
+								<Navbar.Brand as={Link} to="/dangnhap">
 									<BsPerson />
 								</Navbar.Brand>
 							</Col>

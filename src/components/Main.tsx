@@ -471,7 +471,7 @@ export default function Main() {
 					/>
 				</Row>
 			</Container>
-			<Container className="mt-3">
+			<Container className="mt-3" style={{ marginBottom: "3rem" }}>
 				<div className="d-flex flex-row">
 					<Card.Img
 						style={{ width: "700px", height: "400px" }}

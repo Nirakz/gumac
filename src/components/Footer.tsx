@@ -5,7 +5,7 @@ import { Card, Col, Container, Navbar, Row } from "react-bootstrap";
 
 export default function Footer() {
 	return (
-		<footer style={{ backgroundColor: "#d8eef1", paddingTop: "3rem", marginTop: "3rem" }}>
+		<footer style={{ backgroundColor: "#d8eef1", paddingTop: "3rem" }}>
 			<Container>
 				<Row>
 					<Col>

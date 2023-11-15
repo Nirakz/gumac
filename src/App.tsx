@@ -3,17 +3,19 @@ import "./App.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
 
 function App() {
 	return (
-		<Router>
-			<div className="App">
-				<Header />
-				<Main />
-				<Footer />
-			</div>
-		</Router>
+		<div className="App">
+			<Header />
+			<Routes>
+				<Route path="/dangnhap" Component={Login} />
+				<Route path="/" Component={Main} />
+			</Routes>
+			<Footer />
+		</div>
 	);
 }
 
