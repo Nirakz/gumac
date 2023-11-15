@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
@@ -8,8 +8,49 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaMagnifyingGlassLocation, FaLocationDot } from "react-icons/fa6";
 import Card from "react-bootstrap/Card";
 import { BsPerson, BsHeart, BsCartCheck } from "react-icons/bs";
+import { NavDropdown } from "react-bootstrap";
 
 export default function Header() {
+	const [showDropdown, setShowDropdown] = useState(false);
+
+	const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
+
+	const handleMouseEnter = () => {
+		const id = setTimeout(() => {
+			setShowDropdown(true);
+		}, 300); // 200 milliseconds = 0.2 seconds
+		setTimeoutId(id);
+	};
+
+	const handleMouseLeave = () => {
+		if (timeoutId) {
+			clearTimeout(timeoutId);
+			setTimeoutId(null);
+		}
+
+		setShowDropdown(false);
+	};
+
+	const [showDropdown2, setShowDropdown2] = useState(false);
+
+	const [timeoutId2, setTimeoutId2] = useState<NodeJS.Timeout | null>(null);
+
+	const handleMouseEnter2 = () => {
+		const id = setTimeout(() => {
+			setShowDropdown2(true);
+		}, 200); // 200 milliseconds = 0.2 seconds
+		setTimeoutId2(id);
+	};
+
+	const handleMouseLeave2 = () => {
+		if (timeoutId2) {
+			clearTimeout(timeoutId2);
+			setTimeoutId2(null);
+		}
+
+		setShowDropdown2(false);
+	};
+
 	return (
 		<header>
 			<Container
@@ -78,14 +119,372 @@ export default function Header() {
 								</Navbar.Brand>
 							</Col>
 							<Col>
-								<Navbar.Brand className="top-menu-item" href="#">
-									THỜI TRANG
-								</Navbar.Brand>
+								<NavDropdown
+									title="THỜI TRANG"
+									id="basic-nav-dropdown"
+									show={showDropdown}
+									onMouseEnter={handleMouseEnter}
+									onMouseLeave={handleMouseLeave}
+									className="top-menu-item"
+								>
+									<div className="mt-4">
+										<Row className="d-flex align-items-center justify-content-center">
+											<Col className="d-flex  justify-content-center">
+												<Card.Img style={{ width: "300px" }} src="../image/1000x1190px.jpg" />
+											</Col>
+											<Col sm={5}>
+												<Row lg={4}>
+													<Col className="d-flex flex-column">
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Công Sở
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Form A
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Sơ Mi
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Caro
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Xuông
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Xòe
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Vest
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Xếp ly
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-1 top-menu-item fw-light text-secondary"
+														>
+															Váy Đầm Dự Tiệc
+														</Navbar.Brand>
+													</Col>
+													<Col className="d-flex flex-column">
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Áo Sơ Mi
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Tay Dài
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Tay Ngắn
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Họa Tiết
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Kiểu
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="my-1 top-menu-item fw-bold">
+															Áo Thun
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Thun Nữ Cổ Tròn
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Thun Nữ Polo
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Thun Nữ Cố Tim
+														</Navbar.Brand>
+													</Col>
+													<Col className="d-flex flex-column">
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Tay Dài
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Tay Ngắn
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Họa Tiết
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Sơ Mi Kiểu
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="my-1 top-menu-item fw-bold">
+															Áo Thun
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Thun Nữ Cổ Tròn
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Thun Nữ Polo
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="my-1 top-menu-item fw-light text-secondary"
+														>
+															Áo Thun Nữ Cố Tim
+														</Navbar.Brand>
+													</Col>
+													<Col className="d-flex flex-column">
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand href="#" className="mb-1 top-menu-item fw-bold">
+															Váy Đầm
+														</Navbar.Brand>
+													</Col>
+												</Row>
+											</Col>
+											<Col className="d-flex  justify-content-center">
+												<Card.Img style={{ width: "300px" }} src="../image/1000x1190px2.jpg" />
+											</Col>
+										</Row>
+									</div>
+								</NavDropdown>
 							</Col>
 							<Col>
-								<Navbar.Brand className="top-menu-item" href="#">
-									BỘ SƯU TẬP
-								</Navbar.Brand>
+								<NavDropdown
+									title="BỘ SƯU TẬP"
+									id="basic-nav-dropdown"
+									show={showDropdown2}
+									onMouseEnter={handleMouseEnter2}
+									onMouseLeave={handleMouseLeave2}
+									className="top-menu-item d-flex"
+								>
+									<div className="mt-4">
+										<Row className="d-flex align-items-center justify-content-center">
+											<Col className="d-flex  justify-content-center">
+												<Card.Img
+													style={{ width: "300px" }}
+													src="../image/toolbar-200x238px-1-2.jpg"
+												/>
+											</Col>
+											<Col sm={5}>
+												<Row lg={3}>
+													<Col className="d-flex flex-column">
+														<Navbar.Brand href="#" className="top-menu-item fw-bold-2">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+													</Col>
+													<Col className="d-flex flex-column">
+														<Navbar.Brand href="#" className="top-menu-item fw-bold-2">
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															Váy Đầm
+														</Navbar.Brand>
+													</Col>
+													<Col sm={8} className="d-flex flex-column">
+														<Navbar.Brand
+															href="#"
+															className="mt-2 top-menu-item fw-bold-2"
+														>
+															THEO XU HƯỚNG
+														</Navbar.Brand>
+														<Row md={2} className="mt-2">
+															<div
+																className="d-flex flex-column text-center top-menu-item"
+																style={{ cursor: "pointer" }}
+															>
+																<Card.Img
+																	style={{ width: "80px" }}
+																	className="rounded-circle"
+																	src="../image/artboard-1.jpg"
+																/>
+																<span className="fw-lighter">CÔNG SỞ</span>
+															</div>
+															<div
+																className="d-flex flex-column text-center top-menu-item"
+																style={{ cursor: "pointer" }}
+															>
+																<Card.Img
+																	style={{ width: "80px" }}
+																	className="rounded-circle"
+																	src="../image/artboard-4-1.jpg"
+																/>
+																<span className="fw-lighter">CÔNG SỞ</span>
+															</div>
+															<div
+																className="d-flex flex-column text-center top-menu-item"
+																style={{ cursor: "pointer" }}
+															>
+																<Card.Img
+																	style={{ width: "80px" }}
+																	className="rounded-circle"
+																	src="../image/artboard-3.jpg"
+																/>
+																<span className="fw-lighter">CÔNG SỞ</span>
+															</div>
+															<div
+																className="d-flex flex-column text-center top-menu-item"
+																style={{ cursor: "pointer" }}
+															>
+																<Card.Img
+																	style={{ width: "80px" }}
+																	className="rounded-circle"
+																	src="../image/artboard-2.jpg"
+																/>
+																<span className="fw-lighter">CÔNG SỞ</span>
+															</div>
+														</Row>
+													</Col>
+												</Row>
+											</Col>
+											<Col className="d-flex  justify-content-center">
+												<Card.Img
+													style={{ width: "300px" }}
+													src="../image/toolbar-200x238px-2-2.jpg"
+												/>
+											</Col>
+										</Row>
+									</div>
+								</NavDropdown>
 							</Col>
 							<Col>
 								<Navbar.Brand className="top-menu-item" href="#">

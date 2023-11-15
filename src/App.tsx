@@ -1,348 +1,154 @@
+import { Card, Col, Container, Navbar, Row } from "react-bootstrap";
 import "./App.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 import Header from "./components/Header";
-import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
-import { BsHeart } from "react-icons/bs";
-import ImageItem from "./components/ImageItem";
+import Main from "./components/Main";
+import { FaFacebookF, FaYoutube, FaTiktok } from "react-icons/fa";
+import { SiZalo } from "react-icons/si";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<main>
-				<Container fluid className="mt-4 d-flex justify-content-center">
-					<Card
-						style={{ backgroundImage: `url("../image/ticket.png")`, backgroundSize: "cover" }}
-						className="m-4 d-flex flex-row justify-content-center align-items-center"
-					>
-						<Card.Body className="text-white fw-bold fs-4 text-center ms-2" style={{ width: "146px" }}>
-							GIẢM 30K
-						</Card.Body>
-						<Card.Body style={{ fontSize: "13px", width: "285px" }} className="ms-3">
-							<Card.Title className="fw-bold fs-6 text-uppercase">VOUCHER 30K</Card.Title>
-							<Card.Text className="fw-lighter">
-								VOUCHER MUA HÀNG 30K ÁP DỤNG CHO TẤT CẢ ĐƠN HÀNG
-							</Card.Text>
-							<Button className="rounded-pill fw-bold" variant="dark">
-								COPY MÃ
-							</Button>
-						</Card.Body>
-					</Card>
-					<Card
-						style={{ backgroundImage: `url("../image/ticket.png")`, backgroundSize: "cover" }}
-						className="m-4 d-flex flex-row justify-content-center align-items-center"
-					>
-						<Card.Body className="text-white fw-bold fs-4 text-center ms-2" style={{ width: "146px" }}>
-							GIẢM 50K
-						</Card.Body>
-						<Card.Body style={{ fontSize: "13px", width: "285px" }}>
-							<Card.Title className="fw-bold fs-6 text-uppercase">VOUCHER 50K</Card.Title>
-							<Card.Text style={{ fontSize: "13px" }}>
-								VOUCHER MUA HÀNG 50K ÁP DỤNG CHO ĐƠN HÀNG TỪ 300K
-							</Card.Text>
-							<Button className="rounded-pill fw-bold" variant="dark">
-								COPY MÃ
-							</Button>
-						</Card.Body>
-					</Card>
-				</Container>
-				<Container fluid>
-					<Row md={3} className="justify-content-md-center">
-						<Col className="img-container" style={{ width: "432px", height: "189px" }}>
-							<Card.Img src="../image/artboard-1-1.jpg" />
-						</Col>
-						<Col className="img-container" style={{ width: "432px", height: "189px" }}>
-							<Card.Img src="../image/artboard-2-1.jpg" />
-						</Col>
-						<Col className="img-container" style={{ width: "432px", height: "189px" }}>
-							<Card.Img src="../image/artboard-3-1.jpg" />
-						</Col>
-					</Row>
-				</Container>
-				<Container fluid>
-					<Row md={4} className="justify-content-md-center">
-						<Col className="d-flex flex-column" style={{ width: "19%" }}>
-							<Image src="../image/1-3.png" style={{ width: "69px", height: "69px" }} />
-							<span
-								className="text-uppercase fw-bold fs-5"
-								style={{ marginBottom: "0.4375rem", marginTop: "1rem" }}
-							>
-								freeship
-							</span>
-							<span className="fw-lighter fs-6">Miễn Phí Vận Chuyển Cho Đơn Hàng Từ 500K</span>
-						</Col>
-						<Col className="d-flex flex-column" style={{ width: "19%" }}>
-							<Image src="../image/1-3.png" style={{ width: "69px", height: "69px" }} />
-							<span
-								className="text-uppercase fw-bold fs-5"
-								style={{ marginBottom: "0.4375rem", marginTop: "1rem" }}
-							>
-								ĐỔI HÀNG TRONG VÒNG 15 NGÀY
-							</span>
-							<span className="fw-lighter fs-6">Hỗ Trợ Đổi Hàng Trong 15 Ngày</span>
-						</Col>
-						<Col className="d-flex flex-column" style={{ width: "19%" }}>
-							<Image src="../image/1-3.png" style={{ width: "69px", height: "69px" }} />
-							<span
-								className="text-uppercase fw-bold fs-5"
-								style={{ marginBottom: "0.4375rem", marginTop: "1rem" }}
-							>
-								CHÍNH SÁCH TÍCH ĐIỂM
-							</span>
-							<span className="fw-lighter fs-6">Áp Dụng Tích Điểm Cho Tất Cả Đơn Hàng</span>
-						</Col>
-						<Col className="d-flex flex-column" style={{ width: "19%" }}>
-							<Image src="../image/1-3.png" style={{ width: "69px", height: "69px" }} />
-							<span
-								className="text-uppercase fw-bold fs-5"
-								style={{ marginBottom: "0.4375rem", marginTop: "1rem" }}
-							>
-								TƯ VẤN LỰA CHỌN VÀ MẶC ĐỒ
-							</span>
-							<span className="fw-lighter fs-6">Đội Ngũ Tư Vấn Tận Tình</span>
-						</Col>
-					</Row>
-				</Container>
-				<Container fluid>
-					<Row lg={1}>
-						<Col className="d-flex justify-content-center align-items-center">
-							<Image className="d-flex" src="../image/banner-phu.jpg" />
-						</Col>
-						<Col className="mt-3">
-							<Row md={2} className="justify-content-md-center">
-								<Col className="img-container img-item m-2 mt-4">
-									<Card.Img src="../image/artboard-1-2.jpg" />
-								</Col>
-								<Col className="img-container m-2 img-item">
-									<Card.Img src="../image/artboard-2-2.jpg" />
-								</Col>
-								<Col className="img-container m-2 mt-4 img-item">
-									<Card.Img src="../image/artboard-3-2.jpg" />
-								</Col>
-								<Col className="img-container m-2 img-item">
-									<Card.Img src="../image/artboard-4.jpg" />
-								</Col>
-							</Row>
-						</Col>
-					</Row>
-				</Container>
+			<Main />
+			<footer style={{ backgroundColor: "#d8eef1", paddingTop: "3rem", marginTop: "3rem" }}>
 				<Container>
 					<Row>
-						<Col className="d-flex align-items-center">
+						<Col>
 							<Row md={1}>
-								<Col className="d-flex justify-content-center align-items-center">
+								<Col>
 									<Card.Img
-										style={{
-											width: "181px",
-											height: "278px",
-											borderRadius: "62.4375rem",
-											overflow: "hidden",
-										}}
-										src="../image/0-DEN-AD10040.png"
+										style={{ width: "158px", height: "101px" }}
+										src="../image/logo-footer.png"
 									/>
-									<div className="d-flex flex-column ms-4">
-										<span className="fs-5 w-75" style={{ cursor: "pointer" }}>
-											Áo Blazer dáng suông AD10040
-										</span>
-										<span
-											className="fs-6 fw-light text-secondary mt-2"
-											style={{ cursor: "pointer" }}
-										>
-											Áo Vest & Blazer
-										</span>
-										<span className="fs-4 mt-3" style={{ cursor: "pointer" }}>
-											855.000 đ
-										</span>
-										<div className="d-flex align-items-center mt-3">
-											<Button
-												variant="outline"
-												className="rounded-pill btn-container"
-												style={{
-													border: "1px solid #00aeef",
-													color: "#00aeef",
-													width: "100px",
-												}}
-											>
-												Mua ngay
-											</Button>
-											<BsHeart
-												className="ms-3"
-												style={{
-													color: "#00aeef",
-													cursor: "pointer",
-													width: "25px",
-													height: "25px",
-												}}
-											/>
-										</div>
-									</div>
 								</Col>
-								<Col className="d-flex justify-content-center align-items-center mt-4">
-									<Card.Img
-										style={{
-											width: "181px",
-											height: "278px",
-											borderRadius: "62.4375rem",
-											overflow: "hidden",
-										}}
-										src="../image/0-DEN-QD10016.png"
-									/>
-									<div className="d-flex flex-column ms-4">
-										<span className="fs-5 w-75" style={{ cursor: "pointer" }}>
-											Quần ống suông xếp ly QD10016
-										</span>
-										<span
-											className="fs-6 fw-light text-secondary mt-2"
-											style={{ cursor: "pointer" }}
-										>
-											Quần Tây Ống Suông
-										</span>
-										<span className="fs-4 mt-3" style={{ cursor: "pointer" }}>
-											445.500 đ
-										</span>
-										<div className="d-flex align-items-center mt-3">
-											<Button
-												variant="outline"
-												className="rounded-pill btn-container"
-												style={{
-													border: "1px solid #00aeef",
-													color: "#00aeef",
-													width: "100px",
-													cursor: "pointer",
-												}}
-											>
-												Mua ngay
-											</Button>
-											<BsHeart
-												className="ms-3"
-												style={{
-													color: "#00aeef",
-													cursor: "pointer",
-													width: "25px",
-													height: "25px",
-												}}
-											/>
-										</div>
-									</div>
+								<Col className="mt-4" style={{ width: "295px" }}>
+									Tự hào là thương hiệu Việt, không chỉ mang đến những sản phẩm đẹp mà còn trao gửi
+									những Giá trị thật - Hạnh phúc đích thực đến tận tay khách hàng.
+								</Col>
+								<Col className="my-5">
+									<FaFacebookF color="#3185d6" fontSize={30} />
+									<SiZalo className="ms-3" fontSize={35} color="#36bef0" />
+									<FaYoutube className="ms-3" fontSize={30} color="#f62e2f" />
+									<FaTiktok className="ms-3" fontSize={25} />
 								</Col>
 							</Row>
 						</Col>
 						<Col>
-							<div style={{ position: "relative" }}>
-								<div className="p-homeCollectionFirst_info">
+							<span style={{ fontSize: "17px", cursor: "pointer" }} className="fw-bold">
+								TRUY CẬP NHANH
+							</span>
+							<Row className="mt-4" md={2}>
+								<Col>
 									<Row md={1}>
-										<Col className="fw-bold homeCollectionFirst_info">HER GLOW</Col>
-										<Col className="d-flex align-items-center p-homeCollectionFirst">
-											<Card.Img src="../image/ic_arrow_blue.svg" className="ic-arrow" />
-											<span className="buttonIcon_text">XEM NGAY BỘ SƯU TẬP</span>
+										<Col>
+											<Navbar.Brand className="top-menu-item" href="#">
+												Trang Chủ
+											</Navbar.Brand>
+										</Col>
+										<Col className="mt-3">
+											<Navbar.Brand className="top-menu-item" href="#">
+												Bộ sưu tập
+											</Navbar.Brand>
+										</Col>
+										<Col className="mt-3">
+											<Navbar.Brand className="top-menu-item" href="#">
+												Tuyển dụng
+											</Navbar.Brand>
 										</Col>
 									</Row>
-								</div>
-								<div>
-									<Card.Img style={{ marginLeft: "100px" }} src="../image/1.png" />
-								</div>
-							</div>
+								</Col>
+								<Col>
+									<Row style={{width: "256px"}} md={1}>
+										<Col>
+											<Navbar.Brand className="top-menu-item" href="#">
+												Đầm
+											</Navbar.Brand>
+										</Col>
+										<Col className="mt-3">
+											<Navbar.Brand className="top-menu-item" href="#">
+												Áo sơ mi
+											</Navbar.Brand>
+										</Col>
+										<Col className="mt-3">
+											<Navbar.Brand className="top-menu-item" href="#">
+												Quần
+											</Navbar.Brand>
+										</Col>
+										<Col className="mt-3">
+											<Navbar.Brand className="top-menu-item" href="#">
+												Áo thun
+											</Navbar.Brand>
+										</Col>
+										<Col className="mt-3">
+											<Navbar.Brand className="top-menu-item" href="#">
+												Chân váy
+											</Navbar.Brand>
+										</Col>
+										<Col className="mt-3">
+											<Navbar.Brand className="top-menu-item" href="#">
+												Quần short
+											</Navbar.Brand>
+										</Col>
+									</Row>
+								</Col>
+							</Row>
+						</Col>
+						<Col>
+							<span style={{ fontSize: "17px", cursor: "pointer" }} className="fw-bold">
+								NÀNG HỎI - GU ĐÁP
+							</span>
+							<Row className="mt-4" md={1}>
+								<Col>
+									<Navbar.Brand className="top-menu-item" href="#">
+										Hướng dẫn đặt hàng tại Gumac.vn
+									</Navbar.Brand>
+								</Col>
+								<Col className="mt-3">
+									<Navbar.Brand className="top-menu-item" href="#">
+										Hướng dẫn chọn size váy - đầm cùng Gumac.vn
+									</Navbar.Brand>
+								</Col>
+								<Col className="mt-3">
+									<Navbar.Brand className="top-menu-item" href="#">
+										Chính sách khách hàng thân thiết
+									</Navbar.Brand>
+								</Col>
+								<Col className="mt-3">
+									<Navbar.Brand className="top-menu-item" href="#">
+										Chính sách bảo mật thông tin khách hàng
+									</Navbar.Brand>
+								</Col>
+								<Col className="mt-3">
+									<Navbar.Brand className="top-menu-item" href="#">
+										Chính sách bảo hành và đổi sản phẩm
+									</Navbar.Brand>
+								</Col>
+								<Col className="mt-3">
+									<Navbar.Brand className="top-menu-item" href="#">
+										Quy định về thanh toán và vận chuyển
+									</Navbar.Brand>
+								</Col>
+								<Col className="mt-3">
+									<Navbar.Brand className="top-menu-item" href="#">
+										Liên hệ
+									</Navbar.Brand>
+								</Col>
+							</Row>
+						</Col>
+						<Col>
+							<span style={{ fontSize: "17px", cursor: "pointer" }} className="fw-bold">
+								CÁCH THỨC THANH TOÁN
+							</span>
+							<Row className="mt-4" md={4}>
+								<Col><Card.Img src="../image/money.svg"/></Col>
+								<Col><Card.Img src="../image/banking.svg"/></Col>
+								<Col><Card.Img src="../image/momo.svg"/></Col>
+								<Col><Card.Img src="../image/vnpay.svg"/></Col>
+							</Row>
 						</Col>
 					</Row>
 				</Container>
-				<Container>
-					<Row md={5}>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col className="p-2">
-							<Card border="info">
-								<Card.Body className="d-flex flex-column justify-content-center align-items-center slick-slide">
-									<Card.Img style={{ width: "13%" }} src="../image/shirt.png" />
-									<Card.Text className="fw-lighter">Áo Sơ Mi Họa Tiết</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-					</Row>
-				</Container>
-				<Container className="mt-5">
-					<Row md={5}>
-						<ImageItem
-							url1="../image/0-DEN-AD10025.png"
-							url1Change="../image/1-DEN-AD10025.png"
-							url2="../image/MAU-DEN-AD10025.png"
-							name1="Áo kiểu thắt nơ"
-							name2="AD10025"
-							price="330.000 đ"
-							priceDiscount="297.000 đ"
-						/>
-						<ImageItem
-							url1="../image/0-HONG-AD10028.png"
-							url1Change="../image/1-HONG-AD10028.png"
-							url2="../image/MAU-HONG-AD10028.png"
-							name1="Áo kiểu lệch vai"
-							name2="AD10028"
-							price="375.000 đ"
-							priceDiscount="337.500 đ"
-						/>
-						<ImageItem
-							url1="../image/0-DEN-AD10052.png"
-							url1Change="../image/1-DEN-AD10052.png"
-							url2="../image/MAU-DEN-AD10052.png"
-							name1="Áo sơ mi thắt nơ"
-							name2="AD10052"
-							price="430.000 đ"
-							priceDiscount="387.000 đ"
-						/>
-						<ImageItem
-							url1="../image/0-TRANG-AD10024.png"
-							url1Change="../image/1-TRANG-AD10024.png"
-							url2="../image/MAU-TRANG-AD10024.png"
-							name1="Áo kiểu viền bèo"
-							name2="AD10024"
-							price="430.000 đ"
-							priceDiscount="387.000 đ"
-						/>
-						<ImageItem
-							url1="../image/0-HONG-VD10049.png"
-							url1Change="../image/1-HONG-VD10049.png"
-							url2="../image/MAU-HONG-VD10049.png"
-							name1="Chân váy bút chì kiểu"
-							name2="VD10049"
-							price="495.000 đ"
-							priceDiscount="445.500 đ"
-						/>
-					</Row>
-				</Container>
-			</main>
+			</footer>
 		</>
 	);
 }

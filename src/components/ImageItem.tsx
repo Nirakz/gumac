@@ -28,7 +28,7 @@ export default function ImageItem(prop: Images) {
 	};
 
 	return (
-		<Col>
+		<Col className="mt-3">
 			<div className="d-flex flex-column align-items-start">
 				<Card.Img
 					style={{ width: "240px", height: "388px" }}
