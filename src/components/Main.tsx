@@ -11,6 +11,11 @@ import Card from "react-bootstrap/Card";
 export default function Main() {
 	return (
 		<main>
+			<Container className="slider" fluid>
+				<div className="slide">
+					<Card.Img src="../image/1600x635-2.jpg"></Card.Img>
+				</div>
+			</Container>
 			<Container fluid className="mt-4 d-flex justify-content-center">
 				<Card
 					style={{ backgroundImage: `url("../image/ticket.png")`, backgroundSize: "cover" }}

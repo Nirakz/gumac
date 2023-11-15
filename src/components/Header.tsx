@@ -9,6 +9,7 @@ import { FaMagnifyingGlassLocation, FaLocationDot } from "react-icons/fa6";
 import Card from "react-bootstrap/Card";
 import { BsPerson, BsHeart, BsCartCheck } from "react-icons/bs";
 import { NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 	const [showDropdown, setShowDropdown] = useState(false);
@@ -501,7 +502,8 @@ export default function Header() {
 					<Col>
 						<Row className="ms-4 large-icon">
 							<Col md="auto">
-								<Navbar.Brand href="#">
+								{/* as={NavLink} to="/dang-nhap" */}
+								<Navbar.Brand as={Link} to="/dang-nhap">
 									<BsPerson />
 								</Navbar.Brand>
 							</Col>
@@ -518,11 +520,6 @@ export default function Header() {
 						</Row>
 					</Col>
 				</Row>
-			</Container>
-			<Container className="slider" fluid>
-				<div className="slide">
-					<Card.Img src="../image/1600x635-2.jpg"></Card.Img>
-				</div>
 			</Container>
 		</header>
 	);
